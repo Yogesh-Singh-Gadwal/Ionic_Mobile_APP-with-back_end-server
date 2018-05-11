@@ -1,0 +1,53 @@
+
+<!--
+  Generated template for the UsersaaaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>SINGUP</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+  
+
+  
+
+
+  <ion-list>
+
+      <ion-item>
+          <ion-label>Name</ion-label>
+          <ion-input type="text" [(ngModel)]="Name"></ion-input>
+        </ion-item>
+      
+
+      <ion-item>
+        <ion-label>Username</ion-label>
+        <ion-input type="text" [(ngModel)]="Username"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="Password"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>Retype_Password</ion-label>
+          <ion-input (keyup)="checkpass()" type="password" [(ngModel)]="RePassword"></ion-input>
+        </ion-item>
+    {{msg}}
+    </ion-list>
+    
+    <div padding>
+      <button block (click)="onsignupclick()">Sign Up</button>
+    </div>
+
+    {{msg1}}
+    </ion-content>
+    
